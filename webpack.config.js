@@ -18,13 +18,24 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
+            {
+                test: /\.svg$/,
+                use: [
+                  {
+                    loader: 'svg-url-loader',
+                    options: {
+                      limit: 10000,
+                    },
+                  },
+                ],
+            },
         ],
     },
     resolve: {
         extensions: ['*', '.js', '.jsx'],
     },
     output: {
-        filename: "bundle.[hash].js",
+        filename: "bundle.[fullHash].js",
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),

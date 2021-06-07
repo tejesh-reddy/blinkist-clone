@@ -12,12 +12,18 @@
     "react-router-dom": "^5.2.0"
   },
   "scripts": {
-    "start": "webpack serve --config ./webpack.config.js"
+    "start": "webpack serve --config ./webpack.config.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^13.1.9",
@@ -30,6 +36,7 @@
     "html-webpack-plugin": "^5.3.1",
     "react-hot-loader": "^4.13.0",
     "style-loader": "^2.0.0",
+    "svg-url-loader": "^7.1.1",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
