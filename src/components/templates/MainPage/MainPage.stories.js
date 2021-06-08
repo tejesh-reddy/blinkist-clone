@@ -28,6 +28,7 @@ const args = {
                 noBooksText: "You haven't read anything completely yet :)"
             }
         }
+    ]
 };
 
 export const Default = () => <MainPage {...args}/>
